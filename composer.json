@@ -1,5 +1,5 @@
 {
-    "name": "rennokki/laravel-eloquent-query-cache",
+    "name": "maciek-szn/laravel-eloquent-query-cache",
     "description": "Adding cache on your Laravel Eloquent queries' results is now a breeze.",
     "keywords": [
         "laravel",
