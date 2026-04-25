@@ -30,9 +30,7 @@ trait QueryCacheable
     {
         /** @var \Illuminate\Database\Eloquent\Model $this */
         if (isset(static::$flushCacheOnUpdate) && static::$flushCacheOnUpdate) {
-            static::observe(
-                static::getFlushQueryCacheObserver()
-            );
+            static::whenBooted(fn () => static::observe(static::getFlushQueryCacheObserver()));
         }
     }
 
